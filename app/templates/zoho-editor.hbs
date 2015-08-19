@@ -1,0 +1,83 @@
+<div>
+	<div class="panel-info" style="color:#0000FF">
+		<div class="panel-heading">
+		  <div class="row vertical-divider" style="margin-top: 10px">
+			  <div class="col-md-8">
+		      <h2 id="title">Rich Text Editor with all options</h2>
+          {{rich-text-editor
+              richTextEditorId="rich-text-editor"
+              value=textAreaValue1
+              count=textCount1
+              textContent=textContent1
+          }}
+        </div>
+        <div class="col-md-4">
+		      <h4 id="title">Html content</h4>
+            {{textAreaValue1}}
+	        <h4 id="title">Text content</h4>
+            {{textContent1}}
+	        <h4 id="title">Text count</h4>
+            {{textCount1}}
+        </div>
+      </div>
+      <hr class='dotted'/>
+    </div>
+  </div>
+</div>
+<br>
+<div>
+	<div class="panel-info">
+		<div class="panel-heading">
+      <div class="row vertical-divider" style="margin-top: 10px">
+			  <div class="col-md-8">
+		    <h2 id="title">Rich Text Editor with Default Content</h2>
+          {{rich-text-editor
+             richTextEditorId="rich-text-editor1"
+             defaultContent="<h1><p>Zoho Mail Rich Text Editor default content</p></h1>"
+             value=textAreaValue2
+             height=8
+            count=textCount2
+            textContent=textContent2
+          }}
+	      </div>
+	      <div class="col-md-4">
+		      <h4 id="title">Html content</h4>
+            {{textAreaValue2}}
+		      <h4 id="title">Text content</h4>
+            {{textContent2}}
+		      <h4 id="title">Text count</h4>
+            {{textCount2}}
+	      </div>
+      </div>
+      <hr class='dotted' />
+    </div>
+  </div>
+</div>
+<br>
+<div>
+	<div class="panel-info">
+		<div class="panel-heading">
+		  <div class="row vertical-divider" style="margin-top: 10px">
+		    <div class="col-md-8">
+		        <h2 id="title">Rich Text Editor with customized toolbar</h2>
+            {{rich-text-editor
+                richTextEditorId="rich-text-editor2"
+                toolbarOptions=BasicToolbarOptions
+                value=textAreaValue3
+                count=textCount3
+                textContent=textContent3
+            }}
+        </div>
+		    <div class="col-md-4">
+			    <h4 id="title">Html content</h4>
+              {{textAreaValue3}}
+			    <h4 id="title">Text content</h4>
+              {{textContent3}}
+			    <h4 id="title">Text count</h4>
+              {{textCount3}}
+  		  </div>
+      </div>
+      <hr class='dotted'/>
+	  </div>
+  </div>
+</div>

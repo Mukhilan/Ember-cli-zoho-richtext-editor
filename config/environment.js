@@ -20,6 +20,13 @@ module.exports = function(environment) {
   };
 
   if (environment === 'development') {
+    ENV.contentSecurityPolicy = {
+      'default-src': "'none'",
+      'script-src': "'self' https://js.zohostatic.com http://js.zohostatic.com",
+      'img-src': "'self' https://css.zohostatic.com http://css.zohostatic.com",
+      'style-src': "'self' 'unsafe-inline' http://css.zohostatic.com https://css.zohostatic.com",
+      'media-src': "'self'"
+    }
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
     // ENV.APP.LOG_TRANSITIONS = true;

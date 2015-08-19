@@ -15,4 +15,9 @@ App = Ember.Application.extend({
 
 loadInitializers(App, config.modulePrefix);
 
+window.onload = function() {
+  ZE_Init.init();
+  ZE_Init.applyTheme("heart");
+};
+
 export default App;
